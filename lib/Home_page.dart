@@ -17,12 +17,16 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-                onPressed: () => Navigator.pushNamed(context, "todo-local"),
+                onPressed: () => Navigator.pushNamed(context, "/todo-local"),
                 child: const Text("로컬 TO-DO")
             ),
             ElevatedButton(
-                onPressed: () => Navigator.pushNamed(context, "todo-local"),
+                onPressed: () => Navigator.pushNamed(context, "/todo-remote"),
                 child: const Text("클라우드 TO-DO")
+            ),
+            ElevatedButton(
+                onPressed: () => Navigator.pushNamed(context, "/login"),
+                child: const Text("로그인")
             )
           ],
         ),
